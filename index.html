@@ -1,0 +1,435 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/MyStyle.css">
+
+</head>
+<body>
+
+
+
+
+<section class="home" id="home">
+   <div class="swiper home-slider">
+       <div class="navbar-first">
+         <a class="Home"  href="index.html">home</a>
+         <a href="admin.html">bookings</a>
+         <a href="register.html">register</a>
+         <a href="login.html">login</a>
+       </div>
+      <div class="swiper-wrapper">
+        <!-- box1 -->
+        <div class="box swiper-slide">
+         <img src="images/home-img-2.jpg" alt="">
+         <div class="flex">
+            <h3>foods and drinks</h3>
+            <a href="#reservation" class="btn">make a reservation</a>
+         </div>
+      </div>
+                 <!-- box2 -->
+   <div class="box swiper-slide">
+    <img src="images/home-img-1.jpg" alt="">
+    <div class="flex">
+       <h3>luxurious rooms</h3>
+       <a href="#availability" class="btn">check availability</a>
+    </div>
+ </div>
+         
+                    <!-- box3 -->
+<div class="box swiper-slide">
+   <img src="images/home-img-3.jpg" alt="">
+   <div class="flex">
+      <h3>luxurious halls</h3>
+      <a href="#contact" class="btn">contact us</a>
+   </div>
+</div>
+               <!-- box4 -->
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+   </div>
+</section>
+
+
+<section class="availability" id="availability">
+
+   <form>
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input value="check availability" name="check" class="btn" onclick="afficherModal()">
+   </form>
+
+</section>
+
+
+<section class="about" id="about">
+
+   <div class="row animate-on-scroll">
+      <div class="image">
+         <img src="images/about-img-1.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>best staff</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+         <a href="#reservation" class="btn">make a reservation</a>
+      </div>
+   </div>
+
+   <div class="row revers animate-on-scroll">
+      <div class="image">
+         <img src="images/about-img-2.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>best foods</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+         <a href="#contact" class="btn">contact us</a>
+      </div>
+   </div>
+
+   <div class="row animate-on-scroll">
+      <div class="image">
+         <img src="images/about-img-3.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>swimming pool</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+         <a href="#availability" class="btn">check availability</a>
+      </div>
+   </div>
+
+</section>
+
+
+
+<section class="services">
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>food & drinks</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>outdoor dining</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>beach view</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>decorations</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>swimming pool</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>resort beach</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+<section class="reservation" id="reservation">
+
+   <form  method="GET">
+      <h3>make a reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>your name <span>*</span></p>
+            <input type="text" name="name" maxlength="50" required placeholder="enter your name" class="input">
+         </div>
+         <div class="box">
+            <p>your email <span>*</span></p>
+            <input id="eml" type="email" name="mail" maxlength="50" required placeholder="enter your email" class="input">
+         </div>
+         <div class="box">
+            <p>your number <span>*</span></p>
+            <input  type="number" name="number" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select id="nbr1" name="chambre" class="input" required>
+               <option value="1" selected>1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input id="nbr2" type="date" name="check_db" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input id="nbr3" type="date" name="check_notdb" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select  name="adults" class="input" required>
+               <option value="1" selected>1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="0" selected>0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+      </div>
+      <input id="res" type="submit"  value="book now" name="book" class="btn" onClick="afficherModal1()">
+   </form>
+
+</section>
+
+
+<section class="gallery" id="gallery">
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img id="id" src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+         <img id="id" src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+         <img id="id" src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+         <img id="id" src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+         <img id="id" src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+         <img id="id" src="images/gallery-img-6.webp" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form >
+         <h3>send us message</h3>
+         <input type="text" name="namess" required maxlength="50" placeholder="enter your name" class="box">
+         <input type="email" name="emailss" required maxlength="50" placeholder="enter your email" class="box">
+         <input type="number" name="numberss" required maxlength="10" min="0" max="9999999999" placeholder="enter your number" class="box">
+         <textarea name="message" class="box" required maxlength="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+         <input value="send message" name="send" class="btn" onclick="afficherModal2()">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">frequently asked questions</h3>
+         <div class="box active">
+            <h3 onclick="toggleBox(1)">how to cancel?</h3>
+            <p class="num1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.</p>
+         </div>
+         <div class="box">
+            <h3 onclick="toggleBox(2)">is there any vacancy?</h3>
+            <p class="num2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+         </div>
+         <div class="box">
+            <h3 onclick="toggleBox(3)">what are payment methods?</h3>
+            <p class="num3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+         </div>
+         <div class="box">
+            <h3 onclick="toggleBox(4)">how to claim coupons codes?</h3>
+            <p class="num4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+         </div>
+         <div class="box">
+            <h3 onclick="toggleBox(5)">what are the age requirements?</h3>
+            <p class="num5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+<section class="reviews" id="reviews">
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="images/pic-1.png" alt="">
+            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-2.png" alt="">
+            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-3.png" alt="">
+            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-4.png" alt="">
+            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-5.png" alt="">
+            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-6.png" alt="">
+            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+         </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+<div class="modal" tabindex="-1">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="bton-1 btn-secondary" data-bs-dismiss="modal" onclick="fermerModal()">X</button>
+       </div>
+       <div class="modal-body">
+         <p class="verification">Transition Réussie
+            <div class="checkbox-wrapper">
+               <input checked="" type="checkbox">
+               <svg viewBox="0 0 35.6 35.6">
+                 <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                 <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                 <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+               </svg>
+             </div>
+         </p> 
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div class="modal2" tabindex="-1">
+   <div class="modal2-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="bton-1 btn-secondary" data-bs-dismiss="modal" onclick="fermerModal()">X</button>
+       </div>
+       <div class="modal-body">
+         <p class="verification">Remplir tous les champs !
+            <div class="checkbox-wrapper">
+               <input checked="" type="checkbox">
+               <svg viewBox="0 0 35.6 35.6">
+                   <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                   <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                   <text x="50%"
+                         y="70%" 
+                         font-size="20" 
+                         fill="white" 
+                         text-anchor="middle" 
+                         alignment-baseline="middle"
+                     >X</text>
+               </svg>
+           </div>
+           
+           
+           
+         </p> 
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
+ <script src="login.js"></script>
+</body>
+</html>
